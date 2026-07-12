@@ -314,6 +314,10 @@ img{max-width:100%;display:block}
   .pstep{grid-template-columns:1fr;gap:26px}.pstep.rev .pstep-media{order:0}
   .stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(2n){border-right:none}
   .foot-grid{grid-template-columns:1fr 1fr}
+  .hero{padding-top:112px;padding-bottom:48px}.section{padding:88px 0}.sec-head{margin-bottom:44px}.stat{padding:40px 18px}
+}
+@media(max-width:900px){
+  .nav-links{display:none}.nav-cta .btn-primary{display:none}.burger{display:flex}
 }
 @media(max-width:820px){
   .nav-links{display:none}.nav-cta .btn-primary{display:none}.burger{display:flex}
@@ -987,7 +991,7 @@ document.getElementById('inquiryForm').addEventListener('submit',async function(
     });
     sent=r.ok;
   }catch(err){ sent=false; }
-  if(sent){ window.location.href="thankyou"; return; }
+  if(sent){ window.location.href="https://www.mindabolicslabs.com/thankyou.html"; return; }
   // fallback: open mail client so no lead is lost, then show inline confirmation
   const body="Name: "+d.name+"\nMarke/Company: "+d.company+"\nE-Mail: "+d.email+"\nProdukt: "+d.product+"\nStatus: "+d.stage+"\n\n"+d.project;
   window.location.href="mailto:"+INBOX_EMAIL+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);
