@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Thank-you pages are excluded via <meta name="robots" content="noindex"> (not disallowed here,
+# so crawlers can read the noindex tag).
+
+Sitemap: https://www.mindabolicslabs.com/sitemap.xml
